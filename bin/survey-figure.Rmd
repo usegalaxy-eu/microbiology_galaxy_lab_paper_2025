@@ -273,14 +273,19 @@ gr <- df_plot |>
         # legend.position.inside = TRUE,
         legend.position = "bottom",
         legend.title.position = "top",
-        legend.title = element_text(family = "Calibri"),
+        legend.title = element_text(family = "Calibri", size = 12),
+        legend.text = element_text(size = 12),
         
+        strip.cl
         strip.clip = "off",
-        strip.text.y.right = element_text(face = "bold", angle=0, vjust=.5, hjust = 0),
+        strip.text.y.right = element_text(face = "bold", angle=0, vjust=.5, hjust = 0, size = 9),
         strip.background = element_blank(),
         
         axis.title.y = element_blank(),
-        axis.title.x = element_text(margin = margin(t = 5)),
+        axis.title.x = element_text(margin = margin(t = 5), size = 12),
+        
+        axis.text.x = element_text(size = 12),
+        axis.text.y = element_text(size = 11),
         
         panel.grid.major.y = element_blank(),
         
@@ -372,7 +377,9 @@ gr1 <- gr1_df |>
     
     theme(
         legend.position = "inside",
-        legend.position.inside = c(.3, .75),
+        legend.position.inside = c(.35, .85),
+        legend.text = element_text(size = 12),
+        legend.title = element_text(size = 12),
         
         # axis.line.x = element_line(lineend = "round"),
         # axis.ticks.y = element_line(lineend = "round"),
@@ -383,9 +390,10 @@ gr1 <- gr1_df |>
         panel.grid.minor.y = element_line(linetype = "dashed", lineend = "round"),
         
         axis.text.x = element_text(face = "bold", size = 12),
+        axis.text.y = element_text(face = "bold", size = 12),
         
-        axis.title.x = element_text(margin = margin(t = 10)),
-        axis.title.y = element_markdown(margin = margin(r = 10))
+        axis.title.x = element_text(margin = margin(t = 10), size = 12),
+        axis.title.y = element_markdown(margin = margin(r = 10), size = 12)
     ) +
     
     labs(x = "Year", y = "**Number of publications** citing Galaxy papers")
@@ -427,7 +435,11 @@ gr2 <- gr1_df[which(Topics == "All")] |>
     
     theme(
         legend.position = "inside",
-        legend.position.inside = c(.3, .75),
+        legend.position.inside = c(.35, .85),
+        legend.text = element_text(size = 12),
+        legend.title = element_text(size = 12),
+        
+        strip.text = element_text(size = 16),
         
         # axis.line.x = element_line(lineend = "round"),
         # axis.ticks.y = element_line(lineend = "round"),
@@ -438,9 +450,10 @@ gr2 <- gr1_df[which(Topics == "All")] |>
         panel.grid.minor.y = element_line(linetype = "dashed", lineend = "round"),
         
         axis.text.x = element_text(face = "bold", size = 12),
+        axis.text.y = element_text(face = "bold", size = 12),
         
-        axis.title.x = element_text(margin = margin(t = 10)),
-        axis.title.y = element_markdown(margin = margin(r = 10))
+        axis.title.x = element_text(margin = margin(t = 10), size = 12),
+        axis.title.y = element_markdown(margin = margin(r = 10), size = 12)
     ) +
     
     labs(x = "Year", y = "**Number of publications** citing Galaxy papers")
@@ -452,18 +465,18 @@ gr2 <- gr1_df[which(Topics == "All")] |>
 
 library(patchwork)
 
-multi <- (free(gr1) | gr) +
-    plot_layout(widths = c(2, 1)) +
+multi <- (free(gr1) | free(gr)) +
+    plot_layout(widths = c(1, 1.25)) +
     plot_annotation(tag_levels = "A") &
     theme(
-        plot.tag = element_text(size = 18, face = "bold", family = "Calibri")
+        plot.tag = element_text(size = 22, face = "bold", family = "Calibri")
     )
 
-multi2 <- (free(gr2) | gr) +
-    plot_layout(widths = c(2, 1)) +
+multi2 <- (free(gr2) | free(gr)) +
+    plot_layout(widths = c(1, 1.25)) +
     plot_annotation(tag_levels = "A") &
     theme(
-        plot.tag = element_text(size = 18, face = "bold", family = "Calibri")
+        plot.tag = element_text(size = 22, face = "bold", family = "Calibri")
     )
 
 
@@ -495,18 +508,6 @@ save_plot(multi, "../docs/extended/figure_1", 16, 8)
 save_plot(multi2, "../docs/extended/figure_1_v2", 16, 8)
 fwrite(df_plot, "../docs/extended/survey_descriptive_stats.txt", sep = "\t", row.names = FALSE, quote = FALSE)
 ```
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

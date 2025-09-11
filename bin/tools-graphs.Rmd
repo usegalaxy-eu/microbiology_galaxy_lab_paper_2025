@@ -133,7 +133,7 @@ c_1 <- p2[which(edam_clean != "Other")] |>
         legend.title.position = "top",
         
         axis.text.x = element_text(angle = 45, hjust = 1),
-        axis.text.y = element_text(size = 5),
+        axis.text.y = element_text(size = 5.5),
         
         axis.title.x = element_markdown(),
         
@@ -179,7 +179,7 @@ c_2 <- p |>
         legend.position = "bottom",
         legend.title.position = "top",
         
-        axis.text.x = element_text(angle = 45, hjust = 1, size = 4),
+        axis.text.x = element_text(angle = 45, hjust = 1, size = 4.5),
         
         axis.title.y = element_markdown(),
         
@@ -910,7 +910,7 @@ multi <- ((d1_p | a) / b) +
     # plot_layout(heights = c(1, 2)) +
     plot_annotation(tag_levels = "A") &
     theme(
-        plot.tag = element_text(face = "bold", size = 18),
+        plot.tag = element_text(face = "bold", size = 18, family = "Calibri"),
         plot.margin = margin(10, 10, 10, 10)
     )
 
@@ -964,3 +964,5 @@ save_plot(multi, "../docs/extended/figure_3", 10, 12)
 # )
 
 ```
+
+

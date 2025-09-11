@@ -456,14 +456,14 @@ multi <- (free(gr1) | gr) +
     plot_layout(widths = c(2, 1)) +
     plot_annotation(tag_levels = "A") &
     theme(
-        plot.tag = element_text(size = 14, face = "bold")
+        plot.tag = element_text(size = 18, face = "bold", family = "Calibri")
     )
 
 multi2 <- (free(gr2) | gr) +
     plot_layout(widths = c(2, 1)) +
     plot_annotation(tag_levels = "A") &
     theme(
-        plot.tag = element_text(size = 14, face = "bold")
+        plot.tag = element_text(size = 18, face = "bold", family = "Calibri")
     )
 
 

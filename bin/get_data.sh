@@ -10,7 +10,6 @@ wget \
     -O "docs/supplementary/supplementary_table_1.tsv" \
     "https://raw.githubusercontent.com/paulzierep/microgalaxy-survey/refs/heads/main/data/modified_answers.csv" 
     
-
 # Get Codex data
 wget \
     -O "docs/supplementary/supplementary_table_2.tsv" \
@@ -36,13 +35,11 @@ wget \
     -O "docs/supplementary/supplementary_table_6.tsv" \
     "https://raw.githubusercontent.com/galaxyproject/galaxy_codex/refs/heads/main/communities/microgalaxy/resources/tutorials.tsv" 
     
-
 # Get training events
 wget \
     -O "docs/supplementary/supplementary_table_7.tsv" \
     "https://docs.google.com/spreadsheets/d/1Eejqmb4CJQnyy51ayLMOgTPf5mHArKlCtSYzEsFNc2s/export?format=tsv&gid=0" 
      
-
 # Get Supplementary documents
 wget \
     -O "docs/supplementary/supplementary_document_1.pdf" \

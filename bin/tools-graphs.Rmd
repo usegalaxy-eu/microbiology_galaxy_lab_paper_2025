@@ -108,97 +108,112 @@ p2$edam_clean <- p2$edam_clean |> factor(levels = c(t$`EDAM reduced topics`, "Ot
 ### Heatmap: Top 5 EDAM Operations
 
 ```{r}
-c_1 <- p2[which(edam_clean != "Other")] |> 
+
+plot_heatmap <- function(edam_topics) {
     
-    ggplot(aes(variable, `Suite ID`)) + 
+    p2[which(edam_clean %in% edam_topics)] |> 
+        ggplot(aes(variable, `Suite ID`)) + 
     
-    geom_tile(aes(fill = value), color = "grey") + 
-    
-    scale_fill_stepsn(
-        colors = c('#00429d', '#5681b9', '#93c4d2', '#ffffe0', '#ffa59e', '#dd4c65', '#93003a'),
-        guide = guide_colorsteps(barwidth = unit(14, "lines"), barheight = unit(.35, "lines")),
-        breaks = c(2, 4, 8, 16, 32, 64, 128),
-        transform = "log2"
-    ) +
-    
-    facet_grid(cols = vars(fct), rows = vars(edam_clean), scales = "free", space = "free") +
-    
-    scale_y_discrete(expand = c(0, 0)) +
-    scale_x_discrete(expand = c(0, 0)) +
-    
-    theme_minimal(base_family = "Calibri") +
-    
-    theme(
-        legend.position = "bottom",
-        legend.title.position = "top",
+        geom_tile(aes(fill = value), color = "grey") + 
         
-        axis.text.x = element_text(angle = 45, hjust = 1),
-        axis.text.y = element_text(size = 5.5),
+        scale_fill_stepsn(
+            colors = c('#00429d', '#5681b9', '#93c4d2', '#ffffe0', '#ffa59e', '#dd4c65', '#93003a'),
+            guide = guide_colorsteps(barwidth = unit(.35, "lines"), barheight = unit(14, "lines")),
+            breaks = c(2, 4, 8, 16, 32, 64, 128),
+            limits = c(1, 129),
+            transform = "log2"
+        ) +
         
-        axis.title.x = element_markdown(),
+        facet_grid(cols = vars(fct), rows = vars(edam_clean), scales = "free", space = "free") +
         
-        panel.border = element_rect(fill = NA, color = "grey25"),
-        axis.ticks.x = element_line(lineend = "round", color = "grey25"),
+        scale_y_discrete(expand = c(0, 0)) +
+        scale_x_discrete(expand = c(0, 0)) +
         
-        strip.text.x = element_blank(),
-        strip.text.y = element_text(face = "bold", angle = 0, hjust = 0),
+        theme_minimal(base_family = "Calibri") +
         
-        panel.grid.minor = element_blank(),
-        panel.grid.major = element_line(linetype = "dashed", lineend = "round", linewidth = .25),
+        theme(
+            legend.position = "bottom",
+            legend.title.position = "top",
+            
+            axis.text.x = element_text(angle = 45, hjust = 1),
+            axis.text.y = element_text(size = 8),
+            
+            panel.border = element_rect(fill = NA, color = "grey25"),
+            axis.ticks.x = element_line(lineend = "round", color = "grey25"),
+            
+            strip.text.x = element_blank(),
+            strip.text.y = element_text(face = "bold", angle = 0, hjust = 0, size = 12),
+            
+            panel.grid.minor = element_blank(),
+            panel.grid.major = element_line(linetype = "dashed", lineend = "round", linewidth = .25)
+        ) +
         
-        plot.margin = margin(10, 10, 10, 10)
-    ) +
+        labs(y = "Galaxy Tool Suites", x = "Availability of Tool Suites Across **Servers**", fill = "No. of Tools")
     
-    labs(y = "Galaxy Tool Suites", x = "Availability of Tool Suites Across **Servers**", fill = "No. of Tools")
+}
+
+c_1_a <- plot_heatmap(c("Metagenomics", "Sequence\nassembly")) + theme(axis.title.x = element_markdown())
+c_1_b <- plot_heatmap(c("Sequence\nanalysis", "Genomics", "Sequencing")) + theme(axis.title.x = element_markdown(), axis.title.y = element_blank())
 ```
 
 ### Heatmap: All Tools suties
 
 ```{r}
 
-c_2 <- p |> 
-    
-    ggplot(aes(`Suite ID`, variable)) + 
-    
-    geom_tile(aes(fill = value), color = "grey") + 
-    
-    scale_fill_stepsn(
-        colors = c('#00429d', '#5681b9', '#93c4d2', '#ffffe0', '#ffa59e', '#dd4c65', '#93003a'),
-        guide = guide_colorsteps(barwidth = unit(12, "lines"), barheight = unit(.5, "lines")),
-        breaks = c(2, 4, 8, 16, 32, 64, 128),
-        transform = "log2"
-    ) +
-    
-    facet_grid(rows = vars(fct), scales = "free", space = "free") +
-    
-    scale_y_discrete(expand = c(0, 0)) +
-    
-    theme_minimal(base_family = "Calibri") +
-    
-    theme(
-        legend.position = "bottom",
-        legend.title.position = "top",
-        
-        axis.text.x = element_text(angle = 45, hjust = 1, size = 4.5),
-        
-        axis.title.y = element_markdown(),
-        
-        panel.border = element_rect(fill = NA, color = "grey10"),
-        
-        strip.text.y = element_blank(),
-        strip.text.x = element_text(face = "bold", angle = 90, hjust = 0),
-        
-        panel.grid.minor = element_blank(),
-        panel.grid.major = element_line(linetype = "dashed", lineend = "round", linewidth = .35)
-    ) +
-    
-    labs(x = "Galaxy Tool Suites", y = "Availability of Tool Suites Across **Servers**", fill = "No. of Tools")
+# c_2 <- p |> 
+#     
+#     ggplot(aes(`Suite ID`, variable)) + 
+#     
+#     geom_tile(aes(fill = value), color = "grey") + 
+#     
+#     scale_fill_stepsn(
+#         colors = c('#00429d', '#5681b9', '#93c4d2', '#ffffe0', '#ffa59e', '#dd4c65', '#93003a'),
+#         guide = guide_colorsteps(barwidth = unit(12, "lines"), barheight = unit(.5, "lines")),
+#         breaks = c(2, 4, 8, 16, 32, 64, 128),
+#         transform = "log2"
+#     ) +
+#     
+#     facet_grid(rows = vars(fct), scales = "free", space = "free") +
+#     
+#     scale_y_discrete(expand = c(0, 0)) +
+#     
+#     theme_minimal(base_family = "Calibri") +
+#     
+#     theme(
+#         legend.position = "bottom",
+#         legend.title.position = "top",
+#         
+#         axis.text.x = element_text(angle = 45, hjust = 1, size = 4.5),
+#         
+#         axis.title.y = element_markdown(),
+#         
+#         panel.border = element_rect(fill = NA, color = "grey10"),
+#         
+#         strip.text.y = element_blank(),
+#         strip.text.x = element_text(face = "bold", angle = 90, hjust = 0),
+#         
+#         panel.grid.minor = element_blank(),
+#         panel.grid.major = element_line(linetype = "dashed", lineend = "round", linewidth = .35)
+#     ) +
+#     
+#     labs(x = "Galaxy Tool Suites", y = "Availability of Tool Suites Across **Servers**", fill = "No. of Tools")
 
 ```
 
 ### Save plots
 
 ```{r}
+
+library(patchwork)
+
+
+multi <- (c_1_a | c_1_b) +
+    plot_layout(widths = c(1, 1.1), guides = "collect") &
+    theme(
+        legend.direction = "vertical"
+    )
+
+
 outfolder <- "../docs/extended/"
 
 dir.create(outfolder, showWarnings = FALSE)
@@ -222,8 +237,8 @@ save_plot <- function(plot, filename, w, h) {
     
 }
 
-save_plot(c_1, "../docs/extended/supplementary_figure_2_v1", 6, 18)
-save_plot(c_2, "../docs/extended/supplementary_figure_2_v2", 18, 6)
+save_plot(multi, "../docs/extended/supplementary_figure_2_v1", 12, 12)
+# save_plot(c_2, "../docs/extended/supplementary_figure_2_v2", 18, 6)
 ```
 
 

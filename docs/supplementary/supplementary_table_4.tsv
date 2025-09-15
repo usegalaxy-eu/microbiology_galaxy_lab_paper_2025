@@ -1,41 +1,173 @@
-Topic	Title	Link	EDAM topic	EDAM operation	Creation	Last modification	Version	Tutorial	Slides	Video	Workflows	Tools	Servers with precise tool versions	Servers with tool but different versions	Feedback number	Feedback mean note	Visitors	Page views	Visit duration	Video views
-Assembly	Making sense of a newly assembled genome	https://training.galaxyproject.org//topics/assembly/tutorials/ecoli_comparison/tutorial.html	Sequence assembly, Genomics, Microbiology	Sequence visualisation, Read mapping, Genome visualisation, Sequence alignment, Mapping	2018-06-14	2024-06-24	29	True	False	False	True	addValue, jbrowse, collapse_dataset, tp_grep_tool, fasta_filter_by_length, Cut1, Filter1, circos, join1, upload1, Grep1, tp_sort_header_tool, fasta_compute_length, cat1, random_lines1, tp_replace_in_line, lastz_wrapper_2, datamash_ops, circos_aln_to_links, tp_cat, tp_sed_tool, bedtools_complementbed, circos_interval_to_tiles, bedtools_intersectbed, mergeCols1, bedtools_sortbed, tp_replace_in_column			0		6561	12796	2.966666666666667	0
-Assembly	Unicycler Assembly	https://training.galaxyproject.org//topics/assembly/tutorials/unicycler-assembly/tutorial.html	Sequence assembly, Genomics, Microbiology	Genome assembly, Aggregation, Sequencing quality control, Genome annotation, Gene prediction, Sequence composition calculation, Sequence assembly validation, Coding region prediction, Statistical calculation, Validation, Visualisation	2017-10-11	2025-05-15	24	True	True	False	True	unicycler, quast, prokka, fastqc, multiqc	UseGalaxy.eu, UseGalaxy.org (Main), UseGalaxy.org.au	GalaxyTrakr, UseGalaxy.be, UseGalaxy.cz, UseGalaxy.fr, UseGalaxy.no	0		2600473	7071486	4.65	0
-Assembly	Assembly of metagenomic sequencing data	https://training.galaxyproject.org//topics/assembly/tutorials/metagenomics-assembly/tutorial.html	Metagenomics, Sequence assembly	Sequence composition calculation, Sequence assembly validation, Sequence contamination filtering, Data handling, Statistical calculation, Formatting, Read mapping, Local alignment, Genome assembly, Variant calling, Primer removal, Sequencing quality control, Sequence file editing, Sequence assembly visualisation, Sequence alignment analysis, Sequence trimming, Read pre-processing, Visualisation	2025-07-06	2025-07-06	0	True	False	True	True	fastqc, megahit, random_lines1, bowtie2, bandage_info, coverm_contig, quast, metaspades, cutadapt, bg_uniq, ngsutils_bam_filter, bamtools, filter_tabular, seqtk_subseq, tp_cat, bandage_image, megahit_contig2fastg, collection_column_join		UseGalaxy.cz, UseGalaxy.eu	0		1	1	4.216666666666667	0
-Assembly	Genome Assembly of a bacterial genome (MRSA) sequenced using Illumina MiSeq Data	https://training.galaxyproject.org//topics/assembly/tutorials/mrsa-illumina/tutorial.html	Sequence assembly, Whole genome sequencing, Public health and epidemiology, Genomics, Microbiology	Genome assembly, Sequencing quality control, Sequence assembly visualisation, Sequence composition calculation, Sequence assembly validation, Sequence contamination filtering, Statistical calculation, Read mapping, Visualisation	2021-03-24	2025-03-20	16	True	False	True	True	falco, fastp, bandage_info, quast, shovill, upload1, fastqc, bandage_image	UseGalaxy.eu, UseGalaxy.fr, UseGalaxy.org (Main)		0		9187	14351	3.683333333333333	0
-Assembly	Genome Assembly of MRSA from Oxford Nanopore MinION data (and optionally Illumina data)	https://training.galaxyproject.org//topics/assembly/tutorials/mrsa-nanopore/tutorial.html	Sequence assembly, Whole genome sequencing, Public health and epidemiology, Genomics, Microbiology, Antimicrobial resistance	Genome assembly, Scatter plot plotting, Box-Whisker plot plotting, Sequencing quality control, Filtering, Cross-assembly, Sequence alignment, Sequence assembly validation, Sequence composition calculation, Mapping assembly, Sequencing error detection, Sequence assembly visualisation, Sequence contamination filtering, Statistical calculation, De-novo assembly, Read mapping, Visualisation	2021-03-24	2024-11-29	15	True	False	False	True	CONVERTER_bz2_to_uncompressed, flye, fastp, nanoplot, polypolish, porechop, quast, upload1, bwa_mem2, fastqc, bandage_image, filtlong	UseGalaxy.eu	UseGalaxy.cz, UseGalaxy.fr	0		9443	14230	3.3833333333333333	0
-Ecology	Checking expected species and contamination in bacterial isolate	https://training.galaxyproject.org//topics/ecology/tutorials/bacterial-isolate-species-contamination-checking/tutorial.html	Whole genome sequencing, Genomics, Microbiology, Microbial ecology	Taxonomic classification, Expression analysis, Statistical calculation, Cross-assembly	2024-03-04	2024-06-27	4	True	False	False	True	est_abundance, recentrifuge, kraken2, upload1	UseGalaxy.eu, UseGalaxy.fr	Galaxy@AuBi, GalaxyTrakr, UseGalaxy.cz, UseGalaxy.org (Main)	0		702	954	3.433333333333333	0
-Evolution	Identifying tuberculosis transmission links: from SNPs to transmission clusters	https://training.galaxyproject.org//topics/evolution/tutorials/mtb_transmission/tutorial.html	Genomics, Microbiology, Infectious disease, DNA polymorphism	Phylogenetic tree generation, Antimicrobial resistance prediction, Variant calling, Phylogenetic tree visualisation	2022-03-16	2025-05-26	13	True	False	False	True	snippy, collapse_dataset, tp_grep_tool, bcftools_consensus, tb_profiler_profile, clustering_from_distmat, snp_sites, snp_dists, upload1, Grep1, tp_easyjoin_tool, tp_replace_in_line, __MERGE_COLLECTION__, samtools_view, tp_cat, tp_sed_tool, addName, tb_variant_filter, trimmomatic	UseGalaxy.eu		0		2368	3453	2.8333333333333335	0
-Evolution	Tree thinking for tuberculosis evolution and epidemiology	https://training.galaxyproject.org//topics/evolution/tutorials/mtb_phylogeny/tutorial.html	Genomics, Microbiology, Phylogeny, Infectious disease	Phylogenetic tree analysis, Sequence analysis	2022-03-16	2025-06-04	12	True	False	False	True	raxml, upload1, interactive_tool_rstudio	UseGalaxy.eu		0		2010	2930	2.3333333333333335	0
-Evolution	Phylogenetic analysis for bacterial comparative genomics	https://training.galaxyproject.org//topics/evolution/tutorials/bacterial-comparative-genomics/tutorial.html	Genomics, Microbiology, Phylogeny	Phylogenetic tree generation (maximum likelihood and Bayesian methods), Phylogenetic tree generation (from molecular sequences)	2025-03-14	2025-03-14	1	True	False	False	False	fasttree, upload1	Galaxy@AuBi, GalaxyTrakr, UseGalaxy.be, UseGalaxy.cz, UseGalaxy.eu, UseGalaxy.fr, UseGalaxy.no, UseGalaxy.org (Main)		0		44	48	4.766666666666667	0
-Genome Annotation	Genome annotation with Prokka	https://training.galaxyproject.org//topics/genome-annotation/tutorials/annotation-with-prokka/tutorial.html	Genomics, Microbiology, Gene and protein families, Sequence analysis	Coding region prediction, Genome visualisation, Gene prediction, Genome annotation	2018-03-06	2025-03-19	26	True	True	True	True	jbrowse, prokka	UseGalaxy.be, UseGalaxy.eu, UseGalaxy.org (Main)	Galaxy@AuBi, GalaxyTrakr, UseGalaxy.cz, UseGalaxy.fr, UseGalaxy.no, UseGalaxy.org.au	0		2605807	7080374	4.483333333333333	0
-Genome Annotation	Bacterial Genome Annotation	https://training.galaxyproject.org//topics/genome-annotation/tutorials/bacterial-genome-annotation/tutorial.html	Genomics, Microbiology, Gene and protein families, Sequence analysis, Whole genome sequencing, Functional genomics, Mobile genetic elements	Genome assembly, Multilocus sequence typing, Nucleic acid feature detection, Protein feature detection, Genome visualisation, Genome annotation, Structural variation detection, Scaffolding, Sequence motif recognition	2024-02-01	2024-10-15	6	True	False	True	True	plasmidfinder, tp_replace_in_column, jbrowse, integron_finder, upload1, tbl2gff3, tp_tail_tool, Grouping1, bakta, isescan	UseGalaxy.eu, UseGalaxy.fr	Galaxy@AuBi, UseGalaxy.cz, UseGalaxy.org (Main)	0		5160	6985	2.6666666666666665	0
-Genome Annotation	Identification of AMR genes in an assembled bacterial genome	https://training.galaxyproject.org//topics/genome-annotation/tutorials/amr-gene-detection/tutorial.html	Whole genome sequencing, Public health and epidemiology, Genomics, Microbiology, Sequence analysis, Infectious disease, Antimicrobial resistance	Antimicrobial resistance prediction, Read mapping, Genome visualisation, Genome annotation	2024-01-23	2025-06-10	9	True	False	True	True	bowtie2, jbrowse, staramr_search, upload1, Grep1, tbl2gff3, bakta	UseGalaxy.cz, UseGalaxy.eu, UseGalaxy.fr	Galaxy@AuBi, UseGalaxy.org (Main)	0		2814	3831	3.0	0
-Genome Annotation	Refining Genome Annotations with Apollo (prokaryotes)	https://training.galaxyproject.org//topics/genome-annotation/tutorials/apollo/tutorial.html	Genomics, Microbiology, Gene and protein families, Sequence analysis	Genome visualisation	2021-06-04	2025-05-15	22	True	True	True	True	jbrowse, create_account, iframe, create_or_update, list_organism		UseGalaxy.cz, UseGalaxy.eu, UseGalaxy.no	0		2362635	6272924	5.3	0
-Genome Annotation	Bacterial genome quality control	https://training.galaxyproject.org//topics/genome-annotation/tutorials/bacterial-genome-quality-control/tutorial.html	Genomics, Microbiology	Statistical calculation, Validation, Sequencing quality control, Genome comparison, Sequence composition calculation, Sequence assembly validation	2025-03-14	2025-03-14	1	True	False	False	False	checkm2, drep_dereplicate, upload1	UseGalaxy.eu, UseGalaxy.fr, UseGalaxy.org (Main)		0		45	48	2.0833333333333335	0
-Genome Annotation	Dataset construction for bacterial comparative genomics	https://training.galaxyproject.org//topics/genome-annotation/tutorials/bacterial-comparative-genomics-dataset-construction/tutorial.html	Genomics, Microbiology	Data retrieval, Data handling, Sequence database search	2025-03-14	2025-03-14	1	True	False	False	False	sort1, bg_uniq, datasets_download_genome, upload1, Remove beginning1, Cut1, cat1	UseGalaxy.fr	UseGalaxy.cz	0		43	55	5.616666666666666	0
-Genome Annotation	Comparative gene analysis in unannotated genomes	https://training.galaxyproject.org//topics/genome-annotation/tutorials/gene-centric/tutorial.html	Genomics, Gene and protein families, Sequence analysis, Phylogeny, Comparative genomics	Phylogenetic tree generation, Coding region prediction, Transcriptome assembly, Database search, De-novo assembly, Multiple sequence alignment, Sequence alignment analysis	2022-09-08	2025-06-03	10	True	False	False	True	tp_split_on_column, bg_diamond_view, collapse_dataset, join1, gops_intersect_1, orfipy, rapidnj, bg_diamond_makedb, Cut1, Filter1, regexColumn1, tab2fasta, Add_a_column1, bg_diamond, rbc_mafft, cat1	UseGalaxy.eu, UseGalaxy.org (Main)	UseGalaxy.cz	0		1676	2402	3.1666666666666665	0
-Genome Annotation	Essential genes detection with Transposon insertion sequencing	https://training.galaxyproject.org//topics/genome-annotation/tutorials/tnseq/tutorial.html	Genomics, Microbiology, Sequence analysis, Mobile genetic elements	Sequence trimming, Transposon prediction, Read pre-processing, Primer removal	2019-07-02	2024-03-18	12	True	True	False	True	deeptools_bam_coverage, __EXTRACT_DATASET__, bowtie_wrapper, cutadapt, gff_to_prot, bg_find_subsequences, Cut1, tp_easyjoin_tool, Filter1, tp_sort_header_tool, transit_gumbel, Add_a_column1	UseGalaxy.no, UseGalaxy.org.au	UseGalaxy.cz, UseGalaxy.eu	0		2595598	7063962	4.333333333333333	0
-Variant Analysis	Microbial Variant Calling	https://training.galaxyproject.org//topics/variant-analysis/tutorials/microbial-variants/tutorial.html	Genomics, Sequence assembly, DNA polymorphism, Microbiology, Sequence analysis, Genetic variation	Phylogenetic tree generation, Genome visualisation, Variant calling, Phylogenetic tree visualisation	2018-02-26	2025-03-19	24	True	False	False	True	snippy, jbrowse	UseGalaxy.be, UseGalaxy.eu, UseGalaxy.org (Main)	GalaxyTrakr, UseGalaxy.cz, UseGalaxy.fr, UseGalaxy.no, UseGalaxy.org.au	0		14374	23134	2.0166666666666666	0
-Microbiome	Analyses of metagenomics data - The global picture	https://training.galaxyproject.org//topics/microbiome/tutorials/general-tutorial/tutorial.html	Metagenomics, Microbial ecology, Taxonomy, Sequence analysis, Metabarcoding	Sequencing quality control, Phylogenetic analysis, Sequence clustering, Taxonomic classification, Sequence read processing, DNA barcoding, Visualisation	2017-06-22	2024-08-09	4	True	False	False	True	taxonomy_krona_chart, metaphlan2krona, mothur_unique_seqs, mothur_filter_seqs, mothur_classify_seqs, metaphlan2, mothur_make_biom, mothur_make_shared, mothur_count_seqs, humann2_regroup_table, mothur_align_seqs, humann2_renorm_table, mothur_merge_files, mothur_make_group, mothur_summary_seqs, humann2, mothur_screen_seqs, krona-text, mothur_pre_cluster, mothur_cluster_split, mothur_classify_otu		UseGalaxy.fr, UseGalaxy.no, UseGalaxy.org.au	0		6765	9161	2.8333333333333335	0
-Microbiome	Taxonomic Profiling and Visualization of Metagenomic Data	https://training.galaxyproject.org//topics/microbiome/tutorials/taxonomic-profiling/tutorial.html	Metagenomics, Microbial ecology, Taxonomy, Sequence analysis	Taxonomic classification, Statistical calculation, Aggregation, Genome annotation, Visualisation	2023-05-03	2025-04-24	6	True	False	True	True	taxonomy_krona_chart, kraken2, __UNZIP_COLLECTION__, kraken_biom, interactive_tool_phinch, est_abundance, krakentools_kreport2krona, interactive_tool_pavian, metaphlan	UseGalaxy.eu, UseGalaxy.fr, UseGalaxy.org (Main), UseGalaxy.org.au		0		9621	12997	2.183333333333333	0
-Microbiome	Identification of the micro-organisms in a beer using Nanopore sequencing	https://training.galaxyproject.org//topics/microbiome/tutorials/beer-data-analysis/tutorial.html	Metagenomics, Microbial ecology, Taxonomy, Sequence analysis	Taxonomic classification, Sequence contamination filtering, Statistical calculation, Aggregation, Sequencing quality control, Visualisation, Sequence composition calculation	2022-09-29	2024-11-29	5	True	False	True	True	taxonomy_krona_chart, porechop, fastp, kraken2, krakentools_kreport2krona, Filter1, fastqc	GalaxyTrakr, UseGalaxy.eu, UseGalaxy.org (Main), UseGalaxy.org.au	UseGalaxy.cz, UseGalaxy.fr	0		2275	3352	2.8833333333333333	0
-Microbiome	Pathogen detection from (direct Nanopore) sequencing data using Galaxy - Foodborne Edition	https://training.galaxyproject.org//topics/microbiome/tutorials/pathogen-detection-from-nanopore-foodborne-data/tutorial.html	Metagenomics, Public health and epidemiology, Taxonomy, Sequence assembly, Pathology, Sequence analysis	Phylogenetic tree generation (maximum likelihood and Bayesian methods), Phylogenetic tree generation (from molecular sequences), Scatter plot plotting, Box-Whisker plot plotting, Multiple sequence alignment, Cross-assembly, Sequence composition calculation, Taxonomic classification, Mapping assembly, Sequence assembly, Sequence contamination filtering, Data handling, Statistical calculation, De-novo assembly, Pairwise sequence alignment, Validation, Phylogenetic tree reconstruction, Mapping, Genome assembly, Phylogenetic tree analysis, Variant calling, Multilocus sequence typing, Aggregation, Sequencing quality control, Sequence alignment analysis, Sequence assembly visualisation, Phylogenetic tree generation, Visualisation, Antimicrobial resistance prediction, Base-calling	2023-01-26	2024-09-27	11	True	False	True	True	taxonomy_krona_chart, flye, ggplot2_heatmap, samtools_fastx, collapse_dataset, bcftools_consensus, Cut1, clustalw, regexColumn1, fastqc, Add_a_column1, tp_find_and_replace, split_file_to_collection, collection_column_join, nanoplot, Paste1, snpSift_extractFields, medaka_consensus_pipeline, samtools_coverage, table_compute, tp_head_tool, Grep1, tab2fasta, regex1, fasta2tab, krakentools_extract_kraken_reads, tp_multijoin_tool, fasttree, tp_split_on_column, __FILTER_FAILED_DATASETS__, tp_cut_tool, minimap2, fastp, porechop, param_value_from_file, add_line_to_file, CONVERTER_gz_to_uncompressed, __FILTER_EMPTY_DATASETS__, krakentools_kreport2krona, multiqc, Grouping1, bcftools_norm, barchart_gnuplot, collection_element_identifiers, kraken2, __BUILD_LIST__, compose_text_param, snpSift_filter, Count1, Remove beginning1, fasta_merge_files_and_filter_unique_sequences, abricate, bamtools_split_mapped, bandage_image, bedtools_getfastabed, newick_display, samtools_depth, tp_replace_in_column, clair3, tp_sorted_uniq, mlst	UseGalaxy.eu	UseGalaxy.cz, UseGalaxy.org.au	0		4068	6211	3.5166666666666666	0
-Microbiome	Building an amplicon sequence variant (ASV) table from 16S data using DADA2	https://training.galaxyproject.org//topics/microbiome/tutorials/dada-16S/tutorial.html	Microbial ecology, Taxonomy, Sequence analysis, Metabarcoding	Deposition, Variant calling, DNA barcoding, Analysis, Visualisation	2024-06-05	2025-07-03	11	True	False	True	True	dada2_plotQualityProfile, dada2_mergePairs, dada2_assignTaxonomyAddspecies, Add_a_column1, phyloseq_from_dada2, interactive_tool_phyloseq, tp_head_tool, cat1, __SORTLIST__, tp_replace_in_line, dada2_filterAndTrim, __UNZIP_COLLECTION__, dada2_removeBimeraDenovo, dada2_makeSequenceTable, Grouping1, collection_element_identifiers, dada2_learnErrors, dada2_seqCounts, tp_replace_in_column, dada2_dada	UseGalaxy.eu, UseGalaxy.fr, UseGalaxy.org (Main), UseGalaxy.org.au		0		5116	7217	2.433333333333333	0
-Microbiome	Metatranscriptomics analysis using microbiome RNA-seq data	https://training.galaxyproject.org//topics/microbiome/tutorials/metatranscriptomics/tutorial.html	Metatranscriptomics, Microbial ecology, Taxonomy, Function analysis, Sequence analysis	Conversion, Species frequency estimation, Sequence composition calculation, Phylogenetic tree editing, Phylogenetic inference, Taxonomic classification, Statistical calculation, Validation, Phylogenetic tree visualisation, Primer removal, Sequencing quality control, Phylogenetic analysis, Aggregation, Sequence alignment analysis, Sequence trimming, Read pre-processing, Sequence similarity search, Visualisation, Sequence comparison	2019-11-21	2025-06-16	6	True	True	True	True	taxonomy_krona_chart, Cut1, fastqc, tp_find_and_replace, graphlan, export2graphlan, humann, Grep1, humann_split_stratified_table, humann_rename_table, tp_sort_header_tool, bg_sortmerna, humann_regroup_table, metaphlan, cutadapt, graphlan_annotate, multiqc, Grouping1, humann_renorm_table, combine_metaphlan_humann, humann_unpack_pathways, fastq_paired_end_interlacer	UseGalaxy.cz, UseGalaxy.fr, UseGalaxy.org (Main)	UseGalaxy.eu	0		2593407	7056821	4.5	0
-Microbiome	Antibiotic resistance detection	https://training.galaxyproject.org//topics/microbiome/tutorials/plasmid-metagenomics-nanopore/tutorial.html	Metagenomic sequencing, Public health and epidemiology, Metagenomics, Microbiology, Infectious disease, Sequence analysis, Antimicrobial resistance	Genome assembly, Scatter plot plotting, Aggregation, Box-Whisker plot plotting, Sequence assembly visualisation, Mapping assembly, De-novo assembly, Antimicrobial resistance prediction, Pairwise sequence alignment, Sequence analysis	2019-06-25	2024-06-14	4	True	False	True	True	racon, nanoplot, unicycler, PlasFlow, staramr_search, miniasm, gfa_to_fa, bandage_image, minimap2	UseGalaxy.eu	UseGalaxy.be, UseGalaxy.cz, UseGalaxy.no, UseGalaxy.org (Main), UseGalaxy.org.au	0		2775	3918	2.95	0
-Microbiome	Assembly of metagenomic sequencing data	https://training.galaxyproject.org//topics/microbiome/tutorials/metagenomics-assembly/tutorial.html	Metagenomics, Sequence assembly	Sequence composition calculation, Sequence assembly validation, Sequence contamination filtering, Data handling, Statistical calculation, Formatting, Read mapping, Local alignment, Genome assembly, Variant calling, Primer removal, Sequencing quality control, Sequence file editing, Sequence assembly visualisation, Sequence alignment analysis, Sequence trimming, Read pre-processing, Visualisation	2022-12-05	2025-06-16	6	True	False	True	True	fastqc, megahit, random_lines1, bowtie2, bandage_info, coverm_contig, quast, metaspades, cutadapt, bg_uniq, ngsutils_bam_filter, bamtools, filter_tabular, seqtk_subseq, tp_cat, bandage_image, megahit_contig2fastg, collection_column_join		UseGalaxy.cz, UseGalaxy.eu	0		3586	5010	3.0	0
-Microbiome	Metatranscriptomics analysis using microbiome RNA-seq data (short)	https://training.galaxyproject.org//topics/microbiome/tutorials/metatranscriptomics-short/tutorial.html	Metatranscriptomics, Microbial ecology, Taxonomy, Function analysis, Sequence analysis	Conversion, Species frequency estimation, Sequence composition calculation, Phylogenetic tree editing, Phylogenetic inference, Taxonomic classification, Statistical calculation, Validation, Phylogenetic tree visualisation, Primer removal, Sequencing quality control, Phylogenetic analysis, Sequence alignment analysis, Sequence trimming, Read pre-processing, Sequence similarity search, Visualisation, Sequence comparison	2020-02-13	2025-06-16	6	True	False	True	True	taxonomy_krona_chart, Cut1, fastqc, tp_find_and_replace, graphlan, export2graphlan, humann, Grep1, humann_split_stratified_table, humann_rename_table, tp_sort_header_tool, bg_sortmerna, humann_regroup_table, metaphlan, cutadapt, graphlan_annotate, combine_metaphlan2_humann2, multiqc, humann_renorm_table, humann_unpack_pathways, fastq_paired_end_interlacer	UseGalaxy.org (Main), UseGalaxy.org.au	UseGalaxy.cz, UseGalaxy.no	0		598	768	2.2333333333333334	0
-Microbiome	16S Microbial analysis with Nanopore data	https://training.galaxyproject.org//topics/microbiome/tutorials/nanopore-16S-metagenomics/tutorial.html	Microbial ecology, Taxonomy, Sequence analysis, Metabarcoding	Taxonomic classification, Sequence contamination filtering, Statistical calculation, Validation, Sequencing quality control, Visualisation, Sequence composition calculation	2020-11-24	2024-07-31	5	True	False	False	True	taxonomy_krona_chart, porechop, fastp, tp_replace_in_line, kraken2, Remove beginning1, fastqc, multiqc, datamash_reverse	UseGalaxy.eu, UseGalaxy.no, UseGalaxy.org (Main), UseGalaxy.org.au	GalaxyTrakr, UseGalaxy.be, UseGalaxy.cz, UseGalaxy.fr	0		6446	8904	2.6	0
-Microbiome	QIIME 2 Cancer Microbiome Intervention	https://training.galaxyproject.org//topics/microbiome/tutorials/qiime2-cancer-microbiome-intervention/tutorial.html	Microbial ecology, Taxonomy, Sequence analysis, Metabarcoding		2024-02-12	2024-03-14	3	external	False	False	False			UseGalaxy.eu, UseGalaxy.org, UseGalaxy.org.au, UseGalaxy.fr	0		336	555	2.9	0
-Microbiome	QIIME 2 Moving Pictures	https://training.galaxyproject.org//topics/microbiome/tutorials/qiime2-moving-pictures/tutorial.html	Microbial ecology, Taxonomy, Sequence analysis, Metabarcoding		2024-03-14	2024-03-14	1	external	False	False	False			UseGalaxy.eu, UseGalaxy.org, UseGalaxy.org.au, UseGalaxy.fr	0		408	643	3.2666666666666666	0
-Microbiome	Binning of metagenomic sequencing data	https://training.galaxyproject.org//topics/microbiome/tutorials/metagenomics-binning/tutorial.html	Metagenomics, Sequence assembly	Genome assembly, Statistical calculation, Validation, Sequencing quality control, Sequence composition calculation, Sequence assembly validation	2023-12-05	2025-05-15	6	True	False	True	False	megahit, checkm_lineage_wf	GalaxyTrakr, UseGalaxy.cz, UseGalaxy.eu, UseGalaxy.fr	UseGalaxy.org (Main), UseGalaxy.org.au	0		4525	5557	1.4833333333333334	0
-Microbiome	16S Microbial Analysis with mothur (extended)	https://training.galaxyproject.org//topics/microbiome/tutorials/mothur-miseq-sop/tutorial.html	Microbial ecology, Taxonomy, Sequence analysis, Metabarcoding	Phylogenetic tree analysis, Sequencing quality control, Phylogenetic analysis, Sequence clustering, Taxonomic classification, Phylogenetic tree generation, Sequence read processing, DNA barcoding, Phylogenetic tree reconstruction, Visualisation	2017-02-12	2024-03-14	4	True	False	False	True	taxonomy_krona_chart, mothur_unique_seqs, mothur_venn, mothur_remove_seqs, mothur_remove_groups, mothur_filter_seqs, mothur_classify_seqs, mothur_dist_seqs, mothur_chimera_vsearch, mothur_count_groups, mothur_tree_shared, mothur_make_biom, mothur_dist_shared, mothur_sub_sample, mothur_make_shared, mothur_rarefaction_single, mothur_summary_single, mothur_count_seqs, mothur_align_seqs, mothur_remove_lineage, mothur_taxonomy_to_krona, mothur_make_contigs, mothur_seq_error, mothur_cluster, XY_Plot_1, mothur_heatmap_sim, mothur_get_groups, mothur_summary_seqs, mothur_screen_seqs, newick_display, mothur_pre_cluster, mothur_cluster_split, mothur_classify_otu	UseGalaxy.be, UseGalaxy.eu	UseGalaxy.cz, UseGalaxy.fr, UseGalaxy.no, UseGalaxy.org (Main), UseGalaxy.org.au	0		10215	15081	2.7666666666666666	0
-Microbiome	16S Microbial Analysis with mothur (short)	https://training.galaxyproject.org//topics/microbiome/tutorials/mothur-miseq-sop-short/tutorial.html	Microbial ecology, Taxonomy, Sequence analysis, Metabarcoding	Phylogenetic tree analysis, Sequencing quality control, Phylogenetic analysis, Sequence clustering, Taxonomic classification, Phylogenetic tree generation, Sequence read processing, DNA barcoding, Phylogenetic tree reconstruction, Visualisation	2019-05-13	2024-06-14	5	True	False	True	True	mothur_unique_seqs, mothur_venn, collapse_dataset, mothur_remove_seqs, mothur_remove_groups, mothur_filter_seqs, mothur_classify_seqs, mothur_dist_seqs, mothur_chimera_vsearch, mothur_count_groups, mothur_tree_shared, mothur_dist_shared, mothur_sub_sample, mothur_make_shared, mothur_rarefaction_single, mothur_summary_single, mothur_count_seqs, mothur_remove_lineage, mothur_cluster, XY_Plot_1, mothur_heatmap_sim, mothur_summary_seqs, mothur_screen_seqs, newick_display, mothur_pre_cluster, mothur_cluster_split, mothur_classify_otu	UseGalaxy.be, UseGalaxy.eu, UseGalaxy.no, UseGalaxy.org (Main), UseGalaxy.org.au	UseGalaxy.cz, UseGalaxy.fr	0		4516	7580	4.65	0
-Variant Analysis	M. tuberculosis Variant Analysis	https://training.galaxyproject.org//topics/variant-analysis/tutorials/tb-variant-analysis/tutorial.html	Genomics, Microbiology, Sequence assembly, Genetic variation, Public health and epidemiology, Infectious disease	Global alignment, Variant calling, Sequencing quality control, Genome visualisation, Sequence composition calculation, Sequence alignment analysis, Sequence alignment, Phylogenetic tree generation, Taxonomic classification, Sequence contamination filtering, Sequence analysis, Statistical calculation, Antimicrobial resistance prediction, Validation, Local alignment, Phylogenetic tree visualisation	2020-07-25	2024-07-26	30	True	False	True	True	jbrowse, snippy, bcftools_consensus, fastqc, tb_profiler_profile, EMBOSS:%20seqret84, qualimap_bamqc, jvarkit_wgscoverageplotter, upload1, fastp, samtools_stats, multiqc, mosdepth, tp_sed_tool, kraken2, tb_variant_filter, tp_awk_tool, tbvcfreport, __FLATTEN__, EMBOSS: seqret84			0		6988	10808	2.9166666666666665	0
-Proteomics	metaQuantome 3: Taxonomy	https://training.galaxyproject.org//topics/proteomics/tutorials/metaquantome-taxonomy/tutorial.html	Proteomics, Proteogenomics, Metatranscriptomics, Microbial ecology, Metagenomics, Taxonomy	Functional clustering, Statistical inference, Quantification, Heat map generation, Differential protein expression analysis, Query and retrieval, Filtering, Principal component visualisation, Indexing, Visualisation	2020-10-29	2024-03-15	14	True	False	False	True	metaquantome_expand, metaquantome_stat, metaquantome_filter, metaquantome_viz, metaquantome_db, metaquantome_sample	UseGalaxy.be, UseGalaxy.eu	UseGalaxy.cz, UseGalaxy.fr, UseGalaxy.no, UseGalaxy.org.au	0		425	563	2.4833333333333334	0
-Proteomics	metaQuantome 2: Function	https://training.galaxyproject.org//topics/proteomics/tutorials/metaquantome-function/tutorial.html	Proteomics, Proteogenomics, Metatranscriptomics, Microbial ecology, Metagenomics	Functional clustering, Statistical inference, Quantification, Heat map generation, Differential protein expression analysis, Query and retrieval, Filtering, Principal component visualisation, Indexing, Visualisation	2020-10-29	2024-03-15	14	True	False	False	True	metaquantome_expand, metaquantome_stat, metaquantome_filter, metaquantome_viz, metaquantome_db, metaquantome_sample	UseGalaxy.eu	UseGalaxy.be, UseGalaxy.cz, UseGalaxy.fr, UseGalaxy.no, UseGalaxy.org.au	0		397	565	4.333333333333333	0
-Proteomics	Metaproteomics tutorial	https://training.galaxyproject.org//topics/proteomics/tutorials/metaproteomics/tutorial.html	Proteomics, Proteogenomics, Biodiversity, Taxonomy	Prediction and recognition, Visualisation	2017-06-28	2024-06-14	41	True	False	True	True	query_tabular, sqlite_to_tabular, search_gui, peptide_shaker, unipept	UseGalaxy.eu, UseGalaxy.no, UseGalaxy.org (Main), UseGalaxy.org.au	UseGalaxy.be, UseGalaxy.cz	0		2757	4440	2.7	0
-Proteomics	metaQuantome 1: Data creation	https://training.galaxyproject.org//topics/proteomics/tutorials/metaquantome-data-creation/tutorial.html	Proteomics, Proteogenomics, Biodiversity, Taxonomy	Label-free quantification, Prediction and recognition, Formatting, Filtering, Visualisation	2020-10-16	2024-03-14	20	True	False	False	True	msconvert, tp_replace_in_line, query_tabular, flashlfq, Remove beginning1, Grep1, Cut1, search_gui, Filter1, regex1, peptide_shaker, tp_replace_in_column, unipept	UseGalaxy.eu	UseGalaxy.cz, UseGalaxy.no, UseGalaxy.org.au	0		852	1461	3.8	0
-Sequence analysis	Quality and contamination control in bacterial isolate using Illumina MiSeq Data	https://training.galaxyproject.org//topics/sequence-analysis/tutorials/quality-contamination-control/tutorial.html	Whole genome sequencing, Genomics, Microbiology, Microbial ecology	Taxonomic classification, Sequence contamination filtering, Expression analysis, Statistical calculation, Read mapping, Sequencing quality control, Visualisation, Cross-assembly	2024-07-15	2025-03-20	4	True	False	True	True	falco, fastp, kraken2, recentrifuge, upload1, est_abundance	UseGalaxy.eu, UseGalaxy.fr	UseGalaxy.org (Main)	0		1253	1623	3.15	0
-Variant Analysis	Calling variants in non-diploid systems	https://training.galaxyproject.org//topics/variant-analysis/tutorials/non-dip/tutorial.html	Genomics, Sequence assembly, DNA polymorphism, Microbiology, Sequence analysis, Genetic variation	Variant calling, Genome indexing, Sequencing quality control, Sequence alignment, Sequence alignment analysis, Sequence composition calculation, Data handling, Generation, Statistical calculation, Formatting, Read mapping	2017-02-16	2024-03-15	23	True	False	False	True	freebayes, picard_MergeSamFiles, bwa_mem, vcffilter2, vcf2tsv, bamFilter, Cut1, picard_MarkDuplicates, fastqc, bamleftalign	UseGalaxy.eu, UseGalaxy.fr, UseGalaxy.org (Main)	UseGalaxy.be, UseGalaxy.cz, UseGalaxy.no, UseGalaxy.org.au	0		8175	14945	2.1666666666666665	0
+Number in Figure 2	Input step	Output step	Tool suites	Corresponding RRID or biotools ID		
+1	(Meta)genomics / (meta)transcriptomics: Raw data	(Meta)genomics / (meta)transcriptomics: Clean reads	falco	biotools:falco		
+			FastQC	RRID:SCR_014583		
+			Cutadapt	RRID:SCR_011841		
+			fastp	RRID:SCR_016962		
+			MultiQC	RRID:SCR_014982		
+			Porechop	RRID:SCR_016967		
+			Filtlong	RRID:SCR_024020		
+			Nanoplot	RRID:SCR_024128		
+			Pycoqc	RRID:SCR_024185		
+			FastQE	bio.tools:fastqe		
+			lighter	RRID:SCR_024095		
+			Rasusa	biotools:rasusa		
+			BBtools	biotools:bbtools		
+			SeqKit	RRID:SCR_018926		
+			NCBI FCS GX	RRID:SCR_026367		
+			Bowtie	RRID:SCR_005476		
+			BWA	RRID:SCR_010910		
+			minimap	RRID:SCR_018550		
+			SortMeRNA	RRID:SCR_014402		
+2	(Meta)genomics: Clean reads	(Meta)genomics: Identified typed strains /  Taxonomic tables	MetaPhlAn	RRID:SCR_004915		
+			Kraken(2)	RRID:SCR_008140		
+			Bracken	bio.tools:bracken		
+			Diamond	RRID:SCR_016071		
+			Sylph	bio.tools:sylph		
+			mOTUs	bio.tools:motus		
+			(Re)Centrifuge	biotools:Recentrifuge		
+			GTDB-Tk	RRID:SCR_019136		
+			VirAnnot	biotools:virannot		
+			Metabuli			
+			MEGAN			
+3	Genomics: Clean reads	Genomics Assemblies	Shovill	RRID:SCR_017077		
+			Unicycler	RRID:SCR_024380		
+			SPades	RRID:SCR_000131		
+			Flye	RRID:SCR_017016		
+			SKESA	RRID:SCR_024341		
+			ABySS	RRID:SCR_010709		
+			Velvet	RRID:SCR_010755		
+			Unicycler	RRID:SCR_024380		
+			Racon	RRID:SCR_017642		
+			Pilon	RRID:SCR_014731		
+			Polypolish	biotools:polypolish		
+			QUAST	RRID:SCR_001228		
+			BUSCO	RRID:SCR_015008		
+			CheckM	RRID:SCR_016646		
+4	(Meta)genomics: Assemblies /  Metagenome assembled genomes	(Meta)genomics: Reconstructed annotated complex & unknown genomes / Annotated gene catalog /   Numerous functional elements /  Antibiotic Resistance Genes /  Antimicrobial peptides /  Virulence Identification /  Mob. elements transposons Genomics islands /  Molecular typing /  Biosythetic gene	Bakta	RRID:SCR_026400		
+			Prokka	RRID:SCR_014732		
+			Prodigal	RRID:SCR_011936		
+			Maker	RRID:SCR_005309		
+			braker	RRID:SCR_018964		
+			eggNOG Mapper	RRID:SCR_021165		
+			InterProScan	RRID:SCR_005829		
+			Funannotate	RRID:SCR_023039		
+			pharokka	RRID:SCR_026017		
+5	(Meta)genomics: Assemblies / Metagenome assembled genomes	(Meta)genomics: Reconstructed annotated complex & unknown genomes / Annotated gene catalog /   Numerous functional elements /  Antibiotic Resistance Genes /  Antimicrobial peptides	HMMER	RRID:SCR_005305		
+6	(Meta)genomics: Assemblies / Metagenome assembled genomes	(Meta)genomics: Reconstructed annotated complex & unknown genomes / Annotated gene catalog /   Numerous functional elements /  Antibiotic Resistance Genes	Bakta	RRID:SCR_026400		
+			AMRFinderPlus	biotools:amrfinderplus		
+			ABRicate	RRID:SCR_021093		
+			fARGene	biotools:fargene		
+			hAMRonization	biotools:hamronization		
+			argNorm	biotools:argnorm		
+			StarAMR	biotools:staramr		
+			TB-Profiler	biotools:tb-profiler		
+			SeqSero2	biotools:SeqSero2		
+			abriTAMR	biotools:abritamr		
+7	(Meta)genomics: Assemblies / Metagenome assembled genomes	(Meta)genomics: Reconstructed annotated complex & unknown genomes / Annotated gene catalog /   Numerous functional elements /  Antibiotic Resistance Genes /  Virulence Identification	ABRicate	RRID:SCR_021093		
+8	(Meta)genomics: Assemblies / Metagenome assembled genomes	(Meta)genomics: Reconstructed annotated complex & unknown genomes / Annotated gene catalog /   Numerous functional elements /  Antibiotic Resistance Genes /  Mob. elements transposons Genomics islands	ISEScan	biotools:isescan		
+			Transit	RRID:SCR_016492		
+			PlasmidFinder	biotools:PlasmidFinder		
+9	(Meta)genomics: Assemblies / Metagenome assembled genomes	(Meta)genomics: Reconstructed annotated complex & unknown genomes / Annotated gene catalog /   Numerous functional elements /  Antibiotic Resistance Genes /  Molecular typing	StarAMR	biotools:staramr		
+			chewBBaca	biotools:chewbbaca		
+			pyMLST	biotools:pymlst		
+			MLST	RRID:SCR_010245		
+			SISTR	RRID:SCR_024342		
+10	(Meta)genomics: Assemblies / Metagenome assembled genomes	(Meta)genomics: Reconstructed annotated complex & unknown genomes / Annotated gene catalog /   Numerous functional elements /  Antibiotic Resistance Genes	Integron Finder	biotools:integron_finder		
+			CRISPRCasFinder	biotools:CRISPRCasFinder		
+			MITOS	biotools:mitos		
+11	(Meta)genomics: Assemblies / Metagenome assembled genomes	(Meta)genomics: Reconstructed annotated complex & unknown genomes / Annotated gene catalog /   Numerous functional elements /  Antibiotic Resistance Genes /  Biosythetic gene	antiSMASH	RRID:SCR_022060		
+			HMMER	RRID:SCR_005305		
+12	(Meta)genomics: Assemblies / Metagenome assembled genomes	(Meta)genomics: Reconstructed annotated complex & unknown genomes / Annotated gene catalog /   Numerous functional elements /  Antibiotic Resistance Genes	Gene Ontology	RRID:SCR_002811		
+			KEGG	RRID:SCR_012773		
+13	Genomics: Annotated gene catalog	Genomics: Compared genes	Orthofinder	RRID:SCR_017118		 
+			Proteinortho			
+			Roary	RRID:SCR_018172		
+			Mauve	RRID:SCR_012852		
+			Clustal (Omega)	RRID:SCR_001591		
+			FastTree	RRID:SCR_015501		
+			RAxML	RRID:SCR_006086		
+			Circos	RRID:SCR_011798		
+			PPanGGOLiN	biotools:PPanGGOLiN		
+			Panaroo	RRID:SCR_021090		
+14	Genomics: Clean reads	Genomics: Mapped reads	BWA	RRID:SCR_010910		
+			Bowtie	RRID:SCR_005476		
+			minimap	RRID:SCR_018550		
+			Picard Tools	RRID:SCR_006525		
+15	Genomics: Mapped reads	Genomics: Called variants	FreeBayes	RRID:SCR_010761		
+			GATK	RRID:SCR_001876		
+			Bcftools	RRID:SCR_005227		
+			Snippy	RRID:SCR_023572		
+			medaka	biotools:medaka		
+			Clair3	RRID:SCR_026063		
+16	Genomics: Called variants	Genomics: Clean and annotated variants	VCFtools	RRID:SCR_001235		
+			SnpSift	RRID:SCR_015624		
+			SnpEff	RRID:SCR_005191		
+			Samtools	RRID:SCR_002105		
+17	Transcriptomics: Clean reads	Transcriptomics: Mapped reads	STAR	RRID:SCR_004463		
+			HISAT	RRID:SCR_015530		
+			Bowtie2	RRID:SCR_016368		
+18	Transcriptomics: Mapped reads	Transcriptomics: Gene counts	featureCounts	RRID:SCR_012919		
+			HTSeq	RRID:SCR_005514		
+19	Transcriptomics: Gene counts	Transcriptomics: Differentially expressed genes	edgeR	RRID:SCR_012802		
+			DESeq2	RRID:SCR_015687		
+20	Transcriptomics: Gene counts	Transcriptomics: Differentially expressed transcripts	StringTie	RRID:SCR_016323		
+			GFFCompare	biotools:gffcompare		
+			Cufflinks	RRID:SCR_014597		
+21	(Meta)proteomics: Raw data	(Meta)proteomics: Controlled mass spectra	msconvert	biotools:msconvert		
+			OpenMS	RRID:SCR_012042		
+22	(Meta)proteomics: Controlled mass spectra /  Annotated gene catalog / Customised database	(Meta)proteomics: Microbial peptides	SearchGUI	RRID:SCR_012054		
+			PeptideShaker	RRID:SCR_002520		
+			MaxQuant	RRID:SCR_014485		
+			FragPipe	RRID:SCR_022864		
+23	(Meta)proteomics: Microbial peptides	(Meta)proteomics: Quantified microbial peptides /  Protein groups	MaxQuant	RRID:SCR_014485		
+			PepQuery	biotools:PepQuery		
+			FragPipe	RRID:SCR_022864		
+			MSstatsTMT	biotools:msstatstmt		
+			iTRAQ	biotools:itraq		
+			UniPept	RRID:SCR_024987		
+24	(Meta)proteomics: Protein groups	(Meta)proteomics: Differential features /  Visualisations	MSStats	RRID:SCR_014353		
+25	Metabarcoding: Raw reads /  Clean, merged, amplicons /  OTUs/ASVs /   Taxonomic tables	Metabarcoding: Clean, merged, amplicons /  OTUs/ASVs /   Taxonomic tables /  Diversity metrics /  Community profile visualisations /  Differential features 	QIIME2	RRID:SCR_008249		
+			dada2	RRID:SCR_023519		
+			LotuS	biotools:LOTUS		
+			mothur	RRID:SCR_011947		
+			mOTUs	bio.tools:motus		
+			FROGs	biotools:frogs		
+26	Metabarcoding: Taxonomic tables	Metabarcoding: Functional tables	Picrust	RRID:SCR_016855		
+27	Metamicrobiome: Metabarcoding / Metagenomics / Metatranscriptomics / Metaproteomics: Differential features /  Taxonomic tables	Metabarcoding / Metagenomics: Differential features	MaAsLin2	RRID:SCR_023241		
+			edgeR	RRID:SCR_012802		
+			ANCOM	RRID:SCR_024901		
+			ALDEx2	RRID:SCR_003364		
+28	Metagenomics: Taxonomic tables	Metagenomics: Diversity metrics	Krakentools	biotools:krakentools		
+29	Metagenomics / Metatranscriptomics: Taxonomic tables	Metagenomics / Metatranscriptomics: Community profile visulisations	KRONA	RRID:SCR_012785		
+			GraPhlAn	RRID:SCR_016130		
+			Pavian	RRID:SCR_016679		
+			Phinch	biotools:phinch		
+30	Metagenomics / Metatranscriptomics: Clean reads /  Community profile visualisations	Metagenomics / Metatranscriptomics: Feature tables	HUMAnN	RRID:SCR_014620		
+			minimap	RRID:SCR_018550		
+			BWA-MEM	RRID:SCR_022192		
+			Diamond	RRID:SCR_016071		
+31	Metagenomics: Clean reads	Metagenomics: Antibiotic Resistance Genes	Groot	biotools:groot		
+			deepARG	biotools:deeparg		
+32	Metagenomics: Clean reads	Metagenomics: Assemblies	MEGAHIT	RRID:SCR_018551		
+			MetaSPades	biotools:metaspades		
+			Flye	RRID:SCR_017016		
+			Unicycler	RRID:SCR_024380		
+			Racon	RRID:SCR_017642		
+			Pilon	RRID:SCR_014731		
+			Polypolish	biotools:polypolish		
+			(meta)QUAST	RRID:SCR_001228		
+33	Metagenomics: Assemblies	Metagenomics: Metagenome assembled genomes	MetaBAT	RRID:SCR_019134		
+			CONCOCT	biotools:concoct		
+			MAxBin	biotools:maxbin		
+			SemiBin	biotools:semibin		
+			DASTool	biotools:dastool		
+			MetaWRAP	biotools:metawrap		
+			dRep	biotools:drep		
+			CoverM	biotools:coverm		
+			CheckM	RRID:SCR_016646		
+			Binette	biotools:binette		
+34	Metagenomics: Metagenome assembled genomes	Metagenomics: Annotated gene catalog /  Reconstructed, annotated complex & unknown genomes	GTDB-Tk	RRID:SCR_019136		
+			Contig Annotation Tool (CAT)	RRID:SCR_008421		
+35	Metaproteomics: Controlled mass spectra /  Community profile visualisations	Metaproteomics: Customised database	Metanovo	biotools:metanovo		
+36	Metaproteomics: Quantified microbial peptides	Metaproteomics: Taxonomic tables /  Functional tables	Unipept	RRID:SCR_024987		
+37	Metaproteomics: Functional tables	Metaproteomics: Differential features /  Visualisations	MetaQuantome	biotools:metaQuantome		

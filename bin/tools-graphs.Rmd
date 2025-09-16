@@ -322,7 +322,7 @@ df2$cluster <- ifelse(df2$`EDAM reduced operations` %in% st$`EDAM reduced operat
 
 ```{r}
 df2 <- df2[order(-runs, -users)]
-hg0 <- df2[1:15, c("Suite ID", "runs", "users", "Included in"), with = FALSE] |> unique()
+hg0 <- df2[1:10, c("Suite ID", "runs", "users", "Included in"), with = FALSE] |> unique()
 
 hg1 <- tools_dt[which(str_detect(`EDAM reduced topics`, "Microbial ecology|Phylogenetics"))]
 hg1 <- df2[which(`Suite ID` %in% hg1$`Suite ID`)]
@@ -364,13 +364,13 @@ a <- plot_dt |>
     geom_text_repel(
         data = hg0, aes(label = `Suite ID`),
         bg.r = .075, bg.color = "grey96", fontface = "bold", family = "Calibri", box.padding = .5,
-        segment.size = .3, max.overlaps = Inf, size = 3
+        segment.size = .3, max.overlaps = Inf, size = 3.5
     ) +
 
     geom_text_repel(
         data = hg1, aes(label = `Suite ID`),
         bg.r = .05, bg.color = "grey96", fontface = "bold", family = "Calibri", box.padding = .5,
-        segment.size = .3, max.overlaps = Inf, size = 3
+        segment.size = .3, max.overlaps = Inf, size = 3.5
     ) +
     
     scale_color_manual(values = c("Both" = "#8e2bf2", "Tutorials" = "#F28E2B", "Workflows" = "#E15759", "Ν/Α" = "grey"), guide = "none") +
@@ -390,16 +390,16 @@ a <- plot_dt |>
     theme_minimal(base_family = "Calibri") +
     theme(
         legend.position = "inside",
-        legend.position.inside = c(.2, .7),
+        legend.position.inside = c(.25, .7),
         
-        legend.title = element_text(size = 12),
-        legend.text = element_text(size = 12),
+        legend.title = element_text(size = 14),
+        legend.text = element_text(size = 14),
         
         strip.text = element_markdown(),
         
-        axis.title.x = element_markdown(margin = margin(t = 10), size = 12),
-        axis.title.y = element_markdown(margin = margin(r = 10), size = 12),
-        axis.text = element_text(size = 12),
+        axis.title.x = element_markdown(margin = margin(t = 10), size = 14),
+        axis.title.y = element_markdown(margin = margin(r = 10), size = 14),
+        axis.text = element_text(size = 14),
         
         # axis.ticks = element_line(linewidth = .3),
         panel.grid.major = element_line(linewidth = .3, linetype = "dashed", lineend = "round", color = "grey75"),
@@ -523,12 +523,12 @@ b <- plot_dt_2 |>
     
     theme(
         legend.position = "none",
-        axis.text.x = element_text(angle = 45, hjust = 1, size = 12),
-        axis.text.y = element_text(size = 12),
+        axis.text.x = element_text(angle = 45, hjust = 1, size = 14),
+        axis.text.y = element_text(size = 14),
         
-        strip.text = element_markdown(size = 12),
+        strip.text = element_markdown(size = 14),
         
-        axis.title.x = element_markdown(margin = margin(t = 10)),
+        axis.title.x = element_markdown(margin = margin(t = 10), size = 14),
         axis.title.y = element_blank(), # element_markdown(margin = margin(r = 10)),
         
         # axis.ticks = element_line(linewidth = .3),
@@ -849,16 +849,16 @@ d1_p <- ggplot() +
     theme_minimal(base_family = "Calibri") +
     theme(
         legend.title = element_blank(),
-        legend.text = element_text(size = 12),
+        legend.text = element_text(size = 14),
         legend.position.inside = c(.25, .75),
         legend.position = "inside",
         
         panel.grid.major = element_line(linewidth = .3, linetype = "dashed", lineend = "round", color = "grey75"),
         
-        axis.title.x = element_markdown(margin = margin(t = 10), face = "bold", size = 12),
-        axis.title.y = element_markdown(margin = margin(r = 10), size = 12),
+        axis.title.x = element_markdown(margin = margin(t = 10), face = "bold", size = 14),
+        axis.title.y = element_markdown(margin = margin(r = 10), size = 14),
         
-        axis.text = element_text(size = 12),
+        axis.text = element_text(size = 14),
         
         axis.line = element_line(lineend = "round"),
         axis.ticks = element_line(lineend = "round")
@@ -925,8 +925,8 @@ multi <- ((d1_p | a) / b) +
     # plot_layout(heights = c(1, 2)) +
     plot_annotation(tag_levels = "A") &
     theme(
-        plot.tag = element_text(face = "bold", size = 18, family = "Calibri"),
-        plot.margin = margin(10, 10, 10, 10)
+        plot.tag = element_text(face = "bold", size = 22, family = "Calibri"),
+        plot.margin = margin(10, 10, 10, 15)
     )
 
 # multi <- (free(c_1) | (a / d1_p)) + 

@@ -276,7 +276,6 @@ gr <- df_plot |>
         legend.title = element_text(family = "Calibri", size = 12),
         legend.text = element_text(size = 12),
         
-        strip.cl
         strip.clip = "off",
         strip.text.y.right = element_text(face = "bold", angle=0, vjust=.5, hjust = 0, size = 9),
         strip.background = element_blank(),

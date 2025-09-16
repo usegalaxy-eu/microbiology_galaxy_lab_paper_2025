@@ -37,8 +37,8 @@ library(colorspace)
 ## RUN ON CONSOLE IN THIS CASE
 
 tools_url     <- "https://raw.githubusercontent.com/usegalaxy-eu/microgalaxy_paper_2025/refs/heads/main/docs/supplementary/supplementary_table_2.tsv"
-workflows_url <- "https://raw.githubusercontent.com/usegalaxy-eu/microgalaxy_paper_2025/refs/heads/main/docs/supplementary/supplementary_table_3.tsv"
-tutorials_url <- "https://raw.githubusercontent.com/usegalaxy-eu/microgalaxy_paper_2025/refs/heads/main/docs/supplementary/supplementary_table_4.tsv"
+workflows_url <- "https://raw.githubusercontent.com/usegalaxy-eu/microgalaxy_paper_2025/refs/heads/main/docs/supplementary/supplementary_table_5.tsv"
+tutorials_url <- "https://raw.githubusercontent.com/usegalaxy-eu/microgalaxy_paper_2025/refs/heads/main/docs/supplementary/supplementary_table_6.tsv"
 
 tools_dt     <- tools_url |> fread()
 workflows_dt <- workflows_url |> fread()
@@ -961,7 +961,7 @@ save_plot <- function(plot, filename, w, h) {
     
 }
 
-save_plot(multi, "../docs/extended/figure_3", 10, 12)
+save_plot(multi, "../docs/extended/figure_2", 10, 12)
 
 # ggsave(
 #     plot = multi, filename = paste0(outfolder, "/extended_figure_3.png"),

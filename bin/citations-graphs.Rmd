@@ -151,20 +151,20 @@ save_plot <- function(plot, filename, w, h) {
     
 }
 
-save_plot(gr, "../docs/extended/supplementary_figure_1", 8, 6)
+save_plot(gr, "../docs/extended/extended_data_figure_1", 8, 6)
 
 # ggsave(
-#     plot = multi, filename = paste0(outfolder, "/extended_figure_1.png"),
+#     plot = multi, filename = paste0(outfolder, "/extended_data_figure_1.png"),
 #     width = 9, height = 10, units = "in", dpi = 600
 # )
 # 
 # ggsave(
-#     plot = multi, filename = paste0(outfolder, "/extended_figure_1.svg"),
+#     plot = multi, filename = paste0(outfolder, "/extended_data_figure_1.svg"),
 #     width = 9, height = 10, units = "in", dpi = 600
 # )
 # 
 # ggsave(
-#     plot = multi, filename = paste0(outfolder, "/extended_figure_1.pdf"),
+#     plot = multi, filename = paste0(outfolder, "/extended_data_figure_1.pdf"),
 #     width = 9, height = 10, units = "in", device = cairo_pdf
 # )
 

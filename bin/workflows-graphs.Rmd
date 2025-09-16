@@ -414,8 +414,8 @@ save_plot <- function(plot, filename, w, h) {
 
 
 save_plot(gr1, "../docs/extended/heatmap-edam", 16, 12)
-save_plot(gr2, "../docs/extended/extended_figure_4", 16, 8)
-save_plot(gr3, "../docs/extended/supplementary_figure_3", 9, 10)
+save_plot(gr2, "../docs/extended/extended_data_figure_4", 16, 8)
+save_plot(gr3, "../docs/extended/extended_data_figure_3", 9, 10)
 
 
 # writexl::write_xlsx(dt2, paste0(outfolder, "/workflows-stats.xlsx"))

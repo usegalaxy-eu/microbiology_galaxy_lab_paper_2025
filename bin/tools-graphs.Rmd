@@ -237,8 +237,8 @@ save_plot <- function(plot, filename, w, h) {
     
 }
 
-save_plot(multi, "../docs/extended/supplementary_figure_2_v1", 12, 12)
-# save_plot(c_2, "../docs/extended/supplementary_figure_2_v2", 18, 6)
+save_plot(multi, "../docs/extended/extended_data_figure_2_v1", 12, 12)
+# save_plot(c_2, "../docs/extended/extended_data_figure_2_v2", 18, 6)
 ```
 
 
@@ -961,7 +961,7 @@ save_plot <- function(plot, filename, w, h) {
     
 }
 
-save_plot(multi, "../docs/extended/figure_2", 10, 12)
+save_plot(multi, "../docs/figures/figure_2", 10, 12)
 
 # ggsave(
 #     plot = multi, filename = paste0(outfolder, "/extended_figure_3.png"),

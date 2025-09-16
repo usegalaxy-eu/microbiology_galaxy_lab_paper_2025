@@ -503,8 +503,8 @@ save_plot <- function(plot, filename, w, h) {
     
 }
 
-save_plot(multi, "../docs/extended/figure_1", 16, 8)
-save_plot(multi2, "../docs/extended/figure_1_v2", 16, 8)
+save_plot(multi, "../docs/figures/figure_1", 16, 8)
+save_plot(multi2, "../docs/figures/figure_1_v2", 16, 8)
 fwrite(df_plot, "../docs/extended/survey_descriptive_stats.txt", sep = "\t", row.names = FALSE, quote = FALSE)
 ```
 
